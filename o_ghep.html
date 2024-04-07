@@ -1,0 +1,652 @@
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="xKCEpcPMQpTLKOzerlfzOjLJSGAgc5fs3rE174tL" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    
+
+    
+    <style>
+        .star.star-3 {
+            width: 42px;
+            height: 17px;
+        }
+
+        .star {
+            background: url(../images/mobile/star2.png) left center repeat-x;
+            background-size: 14px 14px;
+            display: inline-block;
+            margin-right: 3px;
+            float: left;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination li {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid #3861fb;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            margin: 0 10px;
+            color: #212121;
+        }
+
+        .pagination li.active {
+            background-color: #3861fb;
+            color: white;
+        }
+    </style>
+    <link href="./mini_apartment.css" rel="stylesheet">
+
+<script type="text/javascript" class="flasher-js">(function() {    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.3.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });    }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+</head>
+
+<body>
+    <!-- <div class="mb-icon-nav js-mobile-panel bars-display">  
+    <i class="fa fa-bars" aria-hidden="true"></i>
+
+</div> -->
+<div class="mobile_header">
+    <a class="top-logo" href="http://127.0.0.1:8000" title="">
+        <!-- logo test -->
+        <img src="http://127.0.0.1:8000/../images/logo-phongtro.png" alt="">
+        <!-- logo testt -->
+    </a>
+    <div id="mobile_header_bars" class="mobile_header_bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+
+
+
+
+<nav class="navbar-menu">
+
+    <div class="navbar-menu-container">
+        <a class="top-logo" href="http://127.0.0.1:8000" title="">
+            <!-- logo test -->
+            <img src="./images/logo-phongtro.png" alt="">
+            <!-- logo testt -->
+        </a>
+        <ul id="menu-main-menu" class="container-menu level-1">
+            <li class="navbar_item "><a
+                    href="http://127.0.0.1:8000">Trang chủ</a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                    title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                    title="Nhà cho thuê">Nhà cho thuê </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                    title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+            </li>
+                        <li class="navbar_item active">
+                <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                    title="Ở ghép">Ở ghép </a>
+            </li>
+            
+
+            <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/bai-viet" title="Bài viết">Bài viết</a>
+            </li>
+
+
+
+            <!-- <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/user/nap-tien" title="Nạp tiền">Nạp tiền</a>
+            </li> -->
+
+            <li class="navbar_item "><a
+                href="http://127.0.0.1:8000/bang-gia">Bảng giá</a>
+            </li>
+        </ul>
+
+
+        <div class="header-default container container-header">
+            <div class="header-area">
+                <div class="user-welcome js-reload-html-header">
+                                            <a rel="nofollow" class="btn btn-blue" href="http://127.0.0.1:8000/dang-nhap.html"><i style="margin-right:10px" class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
+                        <a rel="nofollow" class="btn btn-blue" href="http://127.0.0.1:8000/dang-ky.html"><i style="margin-right:10px" class="fa-solid fa-user-plus"></i>Đăng ký</a>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+</nav>        <div>
+        <section class="hero">
+    <div class="hero-image">
+        <img src="./images/hero.jpg" alt="">
+        <div class="hero-slogan ">
+            <h1 class="hero-text">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                    </svg>
+                </span>
+                Khám phá thế giới phòng trọ đầy tiện nghi tại Cần Thơ cùng
+                với dịch vụ tìm kiếm chuyên nghiệp và đáng tin cậy của chúng tôi!!!
+            </h1>
+        </div>
+    </div>
+</section><div id="searchbar">
+    <form role="search" method="GET" action="http://127.0.0.1:8000/tim-kiem" class="searchform js-form-submit-data">
+        <div class="search_field container" style="justify-content: space-between">
+            <style>
+                .search_field_item {
+                    width: 100% !important;
+                }
+            </style>
+            <div class="search_field_item search_field_item_loaitin">
+                <label class="search_field_item_label">Loại tin</label>
+                <select id="search_room_type" class="form-control js_select2_room_type" name="danhmuc_id">
+                    <option value="">Tất cả</option>
+                    {&quot;id&quot;:21,&quot;ten&quot;:&quot;Cho thu\u00ea ph\u00f2ng tr\u1ecd&quot;,&quot;slug&quot;:&quot;cho-thue-phong-tro&quot;}
+                                        <option value="21" >
+                        Cho thuê phòng trọ
+                    </option>
+                                        <option value="22" >
+                        Nhà cho thuê
+                    </option>
+                                        <option value="23" >
+                        Cho thuê mặt bằng
+                    </option>
+                                        <option value="24" >
+                        Ở ghép
+                    </option>
+                                    </select>
+            </div>
+            <div class="search_field_item search_field_item_tinhthanh">
+                <label class="search_field_item_label">Quận huyện</label>
+                <select name="qhuyen_id" class="form-control" id="qhuyen_id" data-placeholder="Click chọn tỉnh thành">
+                    <option value="">Chọn quận huyện</option>
+
+                                        <option value="105" >
+                        Bình Thuỷ
+                    </option>
+                                        <option value="107" >
+                        Cái Răng
+                    </option>
+                                        <option value="110" >
+                        Ninh Kiều
+                    </option>
+                                        <option value="113" >
+                        Ô Môn
+                    </option>
+                                        <option value="116" >
+                        Thốt Nốt
+                    </option>
+                                        <option value="161" >
+                        Cờ Đỏ
+                    </option>
+                                        <option value="172" >
+                        Phong Điền
+                    </option>
+                                        <option value="180" >
+                        Thới Lai
+                    </option>
+                                        <option value="194" >
+                        Vĩnh Thạnh
+                    </option>
+                                    </select>
+
+            </div>
+            <div class="search_field_item search_field_item_quanhuyen ">
+                <label class="search_field_item_label">Phường xã</label>
+                <select name="phuongxa_id" class="form-control " id="phuongxa_id" data-placeholder="Click chọn quận huyện">
+                    <option value="">Chọn phường xã</option>
+                                    </select>
+            </div>
+            <div class="search_field_item search_field_item_mucgia">
+                <label class="search_field_item_label">Khoảng giá</label>
+                <select class="form-control price js_select2_price" name="price">
+                    <option value="">Chọn mức giá</option>
+                                        <option value="1" >Dưới 1 triệu
+                    </option>
+                                        <option value="2" >1 đến 2 triệu
+                    </option>
+                                        <option value="3" >2 đến 3 triệu
+                    </option>
+                                        <option value="4" >3 đến 5 triệu
+                    </option>
+                                        <option value="5" >5 đến 7 triệu
+                    </option>
+                                        <option value="6" >7 đến 10 triệu
+                    </option>
+                                        <option value="7" >10 đến 15 triệu
+                    </option>
+                                        <option value="8" >Trên 15 triệu
+                    </option>
+                                    </select>
+            </div>
+            <div class="search_field_item search_field_item_dientich">
+                <label class="search_field_item_label">Diện tích</label>
+                <select id="search_dientich" name="khuvuc" class="form-control js_select2_acreage">
+                    <option value="">Chọn diện tích</option>
+                                        <option value="1" >Dưới 20m2
+                    </option>
+                                        <option value="2" >20 đến 30m2
+                    </option>
+                                        <option value="3" >30 đến 50m2
+                    </option>
+                                        <option value="4" >50 đến 60m2
+                    </option>
+                                        <option value="5" >60 đến 70m2
+                    </option>
+                                        <option value="6" >70 đến 80m2
+                    </option>
+                                        <option value="7" >80 đến 100m2
+                    </option>
+                                        <option value="8" >100 đến 120m2
+                    </option>
+                                        <option value="9" >120 đến 150m2
+                    </option>
+                                        <option value="10" >Trên 150m2
+                    </option>
+                                    </select>
+            </div>
+            <div class="search_field_item search_field_item_submit">
+                <label class="search_field_item_label mb-item-label">&nbsp;</label>
+                <div>
+                    <button type="submit" class="btn btn-default btn_search_box form-control"> Tìm kiếm </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    var URL_LOAD_DISTRICT = 'http://127.0.0.1:8000/district'
+    var URL_LOAD_WARD = 'http://127.0.0.1:8000/wards'
+</script>
+<section class="breadcrumb container">
+    <ol>
+        <li>
+            <a href="http://127.0.0.1:8000">Trang chủ</a>
+        </li>
+        <li><span>Ở ghép</span></li>
+    </ol>
+</section>
+
+<div class="info container">
+    <h1>Ở ghép</h1>
+    <div class="description">Ở ghép</div>
+</div><section class="grid post-category ">
+    <div class="wrapper container">
+        <div class="content">
+            <div class="card">
+                <div class="card-header">
+                    <div class="cpn-heading">Danh sách tin đăng</div>
+                </div>
+                <div class="card-body">
+                    <div class="post-list">
+                                                <div class="post-item bd-red">
+    <div class="post-item__image">
+        <a href="http://127.0.0.1:8000/room/tim-nam-o-ghep-uu-tien-dan-van-phong-sinh-vien-nguoi-di-lam-100" class="a-img">
+            <img src="./uploads/2024/02/25/2024-02-25__hostel-20.jpg" alt="Tìm Nam ở ghép ưu tiên dân văn phòng, sinh viên, người đi làm">
+            
+
+        </a>
+    </div>
+    <div class="post-item__info">
+        <div class="post-title">
+                                        <span class="star"></span>
+                                                <a href="http://127.0.0.1:8000/room/tim-nam-o-ghep-uu-tien-dan-van-phong-sinh-vien-nguoi-di-lam-100"
+                    title="Tìm Nam ở ghép ưu tiên dân văn phòng, sinh viên, người đi làm">Tìm Nam ở ghép ưu tiên dân văn phòng, sinh viên, người đi làm</a>
+        </div>
+        <div class="meta-salry-time">
+            <div class="post-price">700.000 đ
+            </div>
+
+            <div class="post-time fz-13">Cập nhật: 2024-02-25 22:24:07</div>
+        </div>
+        <div class="meta-acreage-location">
+            <span class="post-acreage fz-13">29m²</span>
+            <span class="post-location">
+                <a href="#" title="44/33, hẻm 23,  Ba Láng, Cần Thơ, Cái Răng">44/33, hẻm 23,  Ba Láng, Cần Thơ, Cái Răng</a>
+            </span>
+        </div>
+        
+        <div class="post-summary">
+            <p>Tìm Nam ở ghép không hút thuốc, ưu tiên dân văn phòng, sinh viên, người đi làm ở Thạnh Lộc 15</p><p>Giá : 1.000.000đ/tháng</p><p>Mô tả phòng (đúng phòng này, để không mất thời gian của 2 bên, cam kết thông tin và hình thật 100%, xem hình đính kèm):</p><p>Phòng hơn 30m2, ở lầu 2</p><p>Phòng chỉ cho tối đa 3 nam</p><p>Phòng rộng, đẹp, sạch sẽ</p><p>Toilet riêng trong phòng, có bồn tắm</p><p>Giờ giấc tự do thoải mãi</p><p>Có cửa sổ, gió thoáng mát phong thủy tốt</p><p>Có wifi mạnh</p><p>Có nhà để xe rộng rãi, an ninh, camera giám sát</p><p>Khu đông dân cư dân trí, an ninh</p><p>Gần cafe sân bóng goal</p>
+        </div>
+    </div>
+</div>                                                <div class="post-item bd-red">
+    <div class="post-item__image">
+        <a href="http://127.0.0.1:8000/room/cho-thue-phong-tro-mini-co-cua-so-thoang-97" class="a-img">
+            <img src="./uploads/2024/02/25/2024-02-25__hostel-6.jpg" alt="Cho thuê phòng trọ mini có cửa sổ thoáng">
+            
+
+        </a>
+    </div>
+    <div class="post-item__info">
+        <div class="post-title">
+                                        <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                                <a href="http://127.0.0.1:8000/room/cho-thue-phong-tro-mini-co-cua-so-thoang-97"
+                    title="Cho thuê phòng trọ mini có cửa sổ thoáng">Cho thuê phòng trọ mini có cửa sổ thoáng</a>
+        </div>
+        <div class="meta-salry-time">
+            <div class="post-price">900.000 đ
+            </div>
+
+            <div class="post-time fz-13">Cập nhật: 2024-02-25 22:09:37</div>
+        </div>
+        <div class="meta-acreage-location">
+            <span class="post-acreage fz-13">15m²</span>
+            <span class="post-location">
+                <a href="#" title="h122, hẻm 32, Bình Thủy, An Thới">h122, hẻm 32, Bình Thủy, An Thới</a>
+            </span>
+        </div>
+        
+        <div class="post-summary">
+            <p>Chính chủ cho thuê phòng trọ đường Trần Xuân Soạn</p><p>Phòng sạch sẽ , thoáng</p><p>Có bếp và toilet chung</p><p>Dọn dẹp vệ sinh 2l / 1 tuần</p><p>Có máy giặt chung</p><p>Giá rẻ</p>
+        </div>
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar sidebar-right">
+            <div class="card b-list-cate">
+    <div class="card-header">
+        <div class="cpn-heading">Danh mục</div>
+    </div>
+    <div class="card-body list-cate">
+        <ul>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21" title="Cho thuê phòng trọ">Cho thuê phòng trọ
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22" title="Nhà cho thuê">Nhà cho thuê
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23" title="Cho thuê mặt bằng">Cho thuê mặt bằng
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24" title="Ở ghép">Ở ghép
+                </a>
+
+            </li>
+                    </ul>
+    </div>
+</div>        </div>
+    </div>
+</section>
+
+
+
+    </div>
+    <div class="container">
+            </div>
+        <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-nav">
+            <div class="footer-col-first">
+                <a class="footer-logo" href="#">Thuê phòng trọ</a>
+                <p style="line-height: 1.3;">Đứng đầu các từ khóa liên quan đến
+                    <a href="" title="phòng trọ cho thuê"><strong>phòng trọ cho thuê</strong></a>,
+                    <a href="#" title="nhà cho thuê"><strong>nhà cho thuê</strong></a>,
+                    <a href="#" title="tìm người ở ghép"><strong>tìm người ở ghép</strong></a>
+                </p>
+                <p style="line-height: 1.3;"><strong>70.000+</strong> tin bài trên hệ thống, và tiếp tục tăng</p>
+                <p style="line-height: 1.3;"><strong>300.000+</strong> khách truy cập và <strong>hơn 2
+                        triệu</strong> lượt xem mỗi tháng</p>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Về CANTHOHOSTEL.COM</span>
+                <ul class="footer-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a rel="nofollow" href="#">Giới thiệu</a></li>
+                    <li><a rel="nofollow" href="#">Blog</a></li>
+                    <li><a rel="nofollow" href="#">Quy chế hoạt động</a></li>
+                    <li><a rel="nofollow" href="#">Quy định sử dụng</a></li>
+                    <li><a rel="nofollow" href="#">Chính sách bảo mật</a></li>
+                    <li><a rel="nofollow" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Hỗ trợ khách hàng</span>
+                <ul class="footer-menu">
+                    <li><a rel="nofollow" href="mailto: tuananh&thienbao_hostel@gmail.com">Câu hỏi thường gặp</a></li>
+                    <li><a rel="nofollow" href="#">Hướng dẫn đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Bảng giá dịch vụ</a></li>
+                    <li><a rel="nofollow" href="#">Quy định đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Giải quyết khiếu nại</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Liên hệ với chúng tôi</span>
+                <div class="social-links">
+                    <a class="social-fb" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-youtube" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-zalo" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-viber" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-twitter" rel="nofollow" target="_blank" href=""><i></i></a>
+                </div>
+                <br>
+                <span class="footer-col-title">Phương thức thanh toán</span>
+                <div class="box-payment">
+                    <ul>
+                        <li>
+                            <img src="./images/jcb.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/visa.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/master.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/in_banking.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/momo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/tien_mat.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-company">
+            <p class="fz-13">Email: tuananh&thienbao_hostel@gmail.com | admin.hostel@gmail.com</p>
+        </div>
+    </div>
+</footer>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="cantho_hostel" agent-id="72e6d912-87c5-40fa-827d-8465000251a6"
+    language-code="en" style="z-index: 9999; bottom: 66px !important;" class="chat_box" ></df-messenger>    <div class="bottom-bar" class="js-bottom-bar-user">
+    <a class="item home" href="http://127.0.0.1:8000">
+        <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+    </a>
+
+    <a rel="nofollow" class="item add-post" href="/user/room/create">
+        <div class="btn-add-post">
+            <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+        </div>
+    </a>
+
+    <a rel="nofollow" class="item login" href="/dang-nhap.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a>
+    <a rel="nofollow" class="item register" href="/dang-ky.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a>
+
+
+</div>
+
+
+
+
+                            <div class="bottom-bar" class="js-bottom-bar-user">
+                            <a class="item home" href="http://127.0.0.1:8000">
+                                <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+                            </a>
+
+                            <a rel="nofollow" class="item add-post" href="/user/room/create">
+                                <div class="btn-add-post">
+                                    <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+                                </div>
+                            </a>
+
+                            <a rel="nofollow" class="item login" href="/dang-nhap.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                            <a rel="nofollow" class="item register" href="/dang-ky.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a>
+                        </div>
+                                       
+    <div class="mobile-panel">
+    <div class="inner">
+        <div class="user-control">
+            <div class="user-info">
+                
+                 
+                    <p>Chào mừng bạn đến với <strong>hostelcantho.com</strong></p>
+                    <a rel="nofollow" class="btn btn-login" href="http://127.0.0.1:8000/dang-nhap.html">Đăng nhập</a>
+                    <a rel="nofollow" class="btn btn-register" href="http://127.0.0.1:8000/dang-ky.html">Đăng ký</a>
+                            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="mn_link" href="http://127.0.0.1:8000">Trang chủ</a></li>
+                 
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                                title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                                title="Nhà cho thuê">Nhà cho thuê </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                                title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+                        </li>
+                                            <li class="navbar_item active">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                                title="Ở ghép">Ở ghép </a>
+                        </li>
+                                        <li><a class="mn_link" href="http://127.0.0.1:8000/bai-viet">Bài viết</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/bang-gia">Bảng giá</a></li>
+                                
+
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div class="panel-backdrop js-panel-backdrop"></div>    <script src="/js/user_room.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function() {
+        console.log("document loaded");
+        $.ajax({
+                url: URL_LOAD_DISTRICT,
+                data: {
+                    qhuyen_id: qhuyen_id
+                },
+            })
+            .done(function(data) {
+                // if (data) {
+                //     let options = `<option value="0"> Chọn phường xã </option>`;
+                //     data.map((item, index) => {
+                //         options += `<option value="${item.id}"> ${item.ten}</option>`
+                //     })
+                //     $("#phuongxa_id").html(options);
+                // }
+                // console.log('---------- data: ', data);
+                console.log('---------- data: ', data);
+            })
+            .fail(function() {
+                let options = `<option value="0"> Chọn phường xã </option>`;
+                $("#phuongxa_id").html(options);
+            });
+
+    });
+
+    $(function() {
+        $("#qhuyen_id").change(function() {
+            let $this = $(this);
+            let qhuyen_id = $this.val();
+            console.log('----', qhuyen_id);
+
+            $.ajax({
+                    url: URL_LOAD_DISTRICT,
+                    data: {
+                        qhuyen_id: qhuyen_id
+                    },
+                })
+                .done(function(data) {
+                    if (data) {
+                        let options = `<option value="0"> Chọn phường xã </option>`;
+                        data.map((item, index) => {
+                            options += `<option value="${item.id}"> ${item.ten}</option>`
+                        })
+                        $("#phuongxa_id").html(options);
+                    }
+                    console.log('---------- data: ', data);
+                })
+                .fail(function() {
+                    let options = `<option value="0"> Chọn phường xã </option>`;
+                    $("#phuongxa_id").html(options);
+                });
+        })
+
+
+        $("#phuongxa_id").change(function() {
+            let $this = $(this);
+            let phuongxa_id = $this.val();
+            console.log('----', phuongxa_id);
+
+            $.ajax({
+                    url: URL_LOAD_WARD,
+                    data: {
+                        phuongxa_id: phuongxa_id
+                    },
+                })
+                .done(function(data) {
+                    if (data) {
+                        let options = `<option value="0"> Chọn phường xã </option>`;
+                        data.map((item, index) => {
+                            options += `<option value="${item.id}"> ${item.ten}</option>`
+                        })
+                        $("#huyen_id").html(options);
+                    }
+                    console.log('---------- data: ', data);
+                });
+        })
+    })
+</script>
+<script src="./mini_apartment.js"></script>
+
+    <script>
+        toastr.options.positionClass = 'toastr-bottom-right';
+    </script>
+</body>
+
+</html>

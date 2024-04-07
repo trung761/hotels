@@ -1,0 +1,897 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="yCIzN2W7dxTu7YDrRFO3yDEh9pOMQTNkHIblENad" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    
+
+    
+    <style>
+        .star.star-3 {
+            width: 42px;
+            height: 17px;
+        }
+
+        .star {
+            background: url(../images/mobile/star2.png) left center repeat-x;
+            background-size: 14px 14px;
+            display: inline-block;
+            margin-right: 3px;
+            float: left;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination li {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid #3861fb;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            margin: 0 10px;
+            color: #212121;
+        }
+
+        .pagination li.active {
+            background-color: #3861fb;
+            color: white;
+        }
+    </style>
+        <link href="./user_room.css" rel="stylesheet">
+
+<script type="text/javascript" class="flasher-js">(function() {    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.3.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });    }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+</head>
+
+<body>
+    <!-- <div class="mb-icon-nav js-mobile-panel bars-display">  
+    <i class="fa fa-bars" aria-hidden="true"></i>
+
+</div> -->
+<div class="mobile_header">
+    <a class="top-logo" href="http://127.0.0.1:8000" title="">
+        <!-- logo test -->
+        <img src="./images/logo-phongtro.png" alt="">
+        <!-- logo testt -->
+    </a>
+    <div id="mobile_header_bars" class="mobile_header_bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+
+
+
+
+<nav class="navbar-menu">
+
+    <div class="navbar-menu-container">
+        <a class="top-logo" href="http://127.0.0.1:8000" title="">
+            <!-- logo test -->
+            <img src="/images/logo-phongtro.png" alt="">
+            <!-- logo testt -->
+        </a>
+        <ul id="menu-main-menu" class="container-menu level-1">
+            <li class="navbar_item "><a
+                    href="http://127.0.0.1:8000">Trang chủ</a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                    title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                    title="Nhà cho thuê">Nhà cho thuê </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                    title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                    title="Ở ghép">Ở ghép </a>
+            </li>
+            
+
+            <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/bai-viet" title="Bài viết">Bài viết</a>
+            </li>
+
+
+
+            <!-- <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/user/nap-tien" title="Nạp tiền">Nạp tiền</a>
+            </li> -->
+
+            <li class="navbar_item "><a
+                href="http://127.0.0.1:8000/bang-gia">Bảng giá</a>
+            </li>
+        </ul>
+
+
+        <div class="header-default container container-header">
+            <div class="header-area">
+                <div class="user-welcome js-reload-html-header">
+                                        <div class="welcome-text">
+                                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                            style="width: 40px;height: 40px;border-radius: 50%" alt="">
+                                                <div class="user-history">
+                            <div class="user-history-name">
+
+                                <span class="text-bold ">
+                                    Id: 19
+                                </span>-
+                                <span class="text-bold  ">Trung</span>
+                                <span class="text-bold text-danger ">
+                                    0 đ
+                                </span>
+
+                            </div>
+                            <a href="http://127.0.0.1:8000/user/cap-nhat.html" class="text-bold  text-navigation">
+                                <!-- text-success -->
+                                Cập nhật tài khoản
+                            </a>
+                            <a href="http://127.0.0.1:8000/user/nap-tien" class="text-bold  text-navigation">
+                                
+                                Nạp tiền
+                            </a>
+                            <a href="http://127.0.0.1:8000/user/lich-su-nap-tien.html" class="text-bold  text-navigation">
+                                Lịch sử nạp tiền
+                                <!-- text-success -->
+                            </a>
+                            <a href="http://127.0.0.1:8000/user/lich-su-thanh-toan.html" class="text-bold  text-navigation">
+                                Lịch sử thanh toán
+                                <!-- text-danger -->
+                            </a>
+
+                            <a href="http://127.0.0.1:8000/user/room" class="text-bold text-navigation">Tin đăng</a>
+                            <a href="http://127.0.0.1:8000/dang-xuat.html" class="text-bold text-navigation">Đăng xuất</a>
+                        </div>
+                    </div>
+                    <a rel="nofollow" class="btn btn-pink btn-add-post" href="http://127.0.0.1:8000/user/room/create">
+                        Đăng tin mới
+                        <i class="la la-plus-circle" aria-hidden="true"></i>
+                    </a>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+</nav>        <div>
+            </div>
+    <div class="container">
+            <section class="breadcrumb container">
+        <ol>
+            <li>
+                <a href="">
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:8000/user/room">
+                    <span>Phòng</span>
+                </a>
+            </li>
+            <li>
+                <span>Thêm mới</span>
+            </li>
+        </ol>
+    </section>
+    <h1 class="page-title-h1">Thêm mới</h1>
+    <div class="setup_discript">
+        <div class="alert alert-danger mb-5" role="alert">
+            Nếu bạn đã từng đăng tin trên phongtrocanthocom, hãy sử dụng chức năng ĐẨY TIN / GIA HẠN / NÂNG CẤP VIP trong mục
+            QUẢN LÝ TIN ĐĂNG để làm mới, đẩy tin lên cao thay vì đăng tin mới. Tin đăng trùng nhau sẽ không được duyệt.
+        </div>
+    </div>
+    
+    <form action="" method="POST" autocomplete="off" enctype="multipart/form-data">
+    <input type="hidden" name="_token" value="yCIzN2W7dxTu7YDrRFO3yDEh9pOMQTNkHIblENad">    <style>
+    .ck-blurred,
+    .ck-content {
+        min-height: 200px;
+    }
+    </style>
+    <div class="setup_post">
+    <div style="padding:0" class="form-room container">
+        <div class="room-left">
+            <h4>Địa chỉ cho thuê</h4>
+            <div class="row-lists">
+                <div class="form-group row-lists-3">
+                    <label class="search_field_item_label">Quận huyện</label>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <select name="qhuyen_id" class="form-control" id="qhuyen_id"
+                        data-placeholder="Click chọn quận huyện">
+                        <option value="">Chọn quận huyện</option>
+                                                <option value="105"
+                            >
+                            Bình Thuỷ
+                        </option>
+                                                <option value="107"
+                            >
+                            Cái Răng
+                        </option>
+                                                <option value="110"
+                            >
+                            Ninh Kiều
+                        </option>
+                                                <option value="113"
+                            >
+                            Ô Môn
+                        </option>
+                                                <option value="116"
+                            >
+                            Thốt Nốt
+                        </option>
+                                                <option value="161"
+                            >
+                            Cờ Đỏ
+                        </option>
+                                                <option value="172"
+                            >
+                            Phong Điền
+                        </option>
+                                                <option value="180"
+                            >
+                            Thới Lai
+                        </option>
+                                                <option value="194"
+                            >
+                            Vĩnh Thạnh
+                        </option>
+                                            </select>
+                                    </div>
+                <div class="form-group row-lists-3">
+                    <label for="name">Phường xã</label>
+                    <select name="phuongxa_id" class="form-control " id="phuongxa_id"
+                        data-placeholder="Click chọn quận huyện">
+                        <option value="">Chọn phường xã</option>
+                                                <option value="106" >
+                            An Thới
+                        </option>
+                                                <option value="108" >
+                            Ba Láng
+                        </option>
+                                                <option value="109" >
+                            Hưng Phú
+                        </option>
+                                                <option value="111" >
+                            An Bình
+                        </option>
+                                                <option value="112" >
+                            Hưng Lợi
+                        </option>
+                                                <option value="114" >
+                            Châu Văn Liêm
+                        </option>
+                                                <option value="117" >
+                            Bùi Hữu Nghĩa
+                        </option>
+                                                <option value="118" >
+                            Bình Tuỷ
+                        </option>
+                                                <option value="119" >
+                            Long Hoà
+                        </option>
+                                                <option value="120" >
+                            Long Tuyền
+                        </option>
+                                                <option value="121" >
+                            Thới An Đông
+                        </option>
+                                                <option value="122" >
+                            Trà An
+                        </option>
+                                                <option value="123" >
+                            Trà Nóc
+                        </option>
+                                                <option value="127" >
+                            Hưng Thạnh
+                        </option>
+                                                <option value="128" >
+                            Lê Bình
+                        </option>
+                                                <option value="129" >
+                            Phú Thứ
+                        </option>
+                                                <option value="130" >
+                            Tân Phú
+                        </option>
+                                                <option value="131" >
+                            Thường Thạnh
+                        </option>
+                                                <option value="133" >
+                            An Cư
+                        </option>
+                                                <option value="134" >
+                            An Hoà
+                        </option>
+                                                <option value="135" >
+                            An Khánh
+                        </option>
+                                                <option value="136" >
+                            An Nghiệp
+                        </option>
+                                                <option value="137" >
+                            An Phú
+                        </option>
+                                                <option value="138" >
+                            Cái Khế
+                        </option>
+                                                <option value="141" >
+                            Tân An
+                        </option>
+                                                <option value="142" >
+                            Thới Bình
+                        </option>
+                                                <option value="143" >
+                            Xuân Khánh
+                        </option>
+                                                <option value="145" >
+                            Long Hưng
+                        </option>
+                                                <option value="146" >
+                            Phước Thới
+                        </option>
+                                                <option value="147" >
+                            Thới An
+                        </option>
+                                                <option value="148" >
+                            Thới Hoà
+                        </option>
+                                                <option value="149" >
+                            Thới Long
+                        </option>
+                                                <option value="150" >
+                            Trường Lạc
+                        </option>
+                                                <option value="151" >
+                            Tân Hưng
+                        </option>
+                                                <option value="152" >
+                            Tân Lộc
+                        </option>
+                                                <option value="153" >
+                            Thạnh Hoà
+                        </option>
+                                                <option value="156" >
+                            Thới Thuận
+                        </option>
+                                                <option value="157" >
+                            Thuận An
+                        </option>
+                                                <option value="158" >
+                            Thuận Hưng
+                        </option>
+                                                <option value="159" >
+                            Trung Kiên
+                        </option>
+                                                <option value="160" >
+                            Trung Nhứt
+                        </option>
+                                                <option value="162" >
+                            Thị trấn Cờ Đỏ
+                        </option>
+                                                <option value="163" >
+                            Đông Hiệp
+                        </option>
+                                                <option value="164" >
+                            Đông Thắng
+                        </option>
+                                                <option value="165" >
+                            Thạnh Phú
+                        </option>
+                                                <option value="166" >
+                            Thới Đồng
+                        </option>
+                                                <option value="167" >
+                            Thới Hưng
+                        </option>
+                                                <option value="168" >
+                            Thới Xuân
+                        </option>
+                                                <option value="169" >
+                            Trung An
+                        </option>
+                                                <option value="170" >
+                            Trung Hưng
+                        </option>
+                                                <option value="171" >
+                            Trung Thạnh
+                        </option>
+                                                <option value="173" >
+                            Thị trấn Phong Điền
+                        </option>
+                                                <option value="174" >
+                            Giai Xuân
+                        </option>
+                                                <option value="175" >
+                            Mỹ Khánh
+                        </option>
+                                                <option value="176" >
+                            Nhơn Ái
+                        </option>
+                                                <option value="177" >
+                            Nhơn Nghĩa
+                        </option>
+                                                <option value="178" >
+                            Tân Thới
+                        </option>
+                                                <option value="179" >
+                            Trường Long
+                        </option>
+                                                <option value="181" >
+                            Thị trấn Thới Lai
+                        </option>
+                                                <option value="182" >
+                            Định Môn
+                        </option>
+                                                <option value="183" >
+                            Đông Bình
+                        </option>
+                                                <option value="184" >
+                            Đông Thuận
+                        </option>
+                                                <option value="185" >
+                            Thân Thạnh
+                        </option>
+                                                <option value="186" >
+                            Thới Tân
+                        </option>
+                                                <option value="187" >
+                            Thới Thạnh
+                        </option>
+                                                <option value="188" >
+                            Trường Thắng
+                        </option>
+                                                <option value="189" >
+                            Trường Thành
+                        </option>
+                                                <option value="190" >
+                            Trường Xuân
+                        </option>
+                                                <option value="191" >
+                            Trường Xuân A
+                        </option>
+                                                <option value="192" >
+                            Trường Xuân B
+                        </option>
+                                                <option value="193" >
+                            Xuân Thắng
+                        </option>
+                                                <option value="195" >
+                            Thị trấn Vĩnh Thạnh
+                        </option>
+                                                <option value="196" >
+                            Thị trấn Thạnh An
+                        </option>
+                                                <option value="197" >
+                            Thạnh An
+                        </option>
+                                                <option value="198" >
+                            Thạnh Lộc
+                        </option>
+                                                <option value="199" >
+                            Thạnh Lợi
+                        </option>
+                                                <option value="200" >
+                            Thạnh Mỹ
+                        </option>
+                                                <option value="201" >
+                            Thạnh Quới
+                        </option>
+                                                <option value="202" >
+                            Thạnh Thắng
+                        </option>
+                                                <option value="203" >
+                            Thạnh Tiến
+                        </option>
+                                                <option value="204" >
+                            Vĩnh Bình
+                        </option>
+                                                <option value="205" >
+                            Vĩnh Trinh
+                        </option>
+                                                <option value="206" >
+                            Phường Thốt Nốt
+                        </option>
+                                            </select>
+                                    </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group">
+                    <label for="name">Số nhà</label>
+                    <input type="text" name="sophong" class="form-control" placeholder="Số nhà"
+                        value="">
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group w-100">
+                    <label for="name">Địa chỉ chính xác</label>
+                    <input type="text" name="chitietdiachi" class="form-control" placeholder="Địa chỉ chính xác"
+                        value="">
+                </div>
+            </div>
+            <h4>Thông tin mô tả</h4>
+            <div class="row-lists">
+                <div class="form-group row-lists-3">
+                    <label for="name">Loại chuyên mục</label>
+                    <select name="danhmuc_id" class="form-control" id="" data-placeholder="Click chọn danh mục">
+                                                <option value="21" >
+                            Cho thuê phòng trọ
+                        </option>
+                                                <option value="22" >
+                            Nhà cho thuê
+                        </option>
+                                                <option value="23" >
+                            Cho thuê mặt bằng
+                        </option>
+                                                <option value="24" >
+                            Ở ghép
+                        </option>
+                                            </select>
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group w-100">
+                    <label for="name">Tiêu đề</label>
+                    <input type="text" class="form-control" name="ten" placeholder="Tiêu đề"
+                        value=" ">
+                                    </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group w-100">
+                    <label for="name">Ảnh bìa</label>
+                    <input type="file" name="anhdaidien">
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group w-100">
+                    <label for="name">Mô tả nội dung</label>
+                    <textarea name="mota" class="form-control" id="editor" cols="30"
+                        rows="3"></textarea>
+                                    </div>
+            </div>
+
+            <div class="row-lists">
+                <div class="form-group w-100">
+                    <label for="name">Map</label>
+                    <textarea name="map" class="form-control" id="" cols="30" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group">
+                    <label for="name">Thông tin liên hệ</label>
+                    <input type="text" class="form-control" disabled placeholder="Thông tin liên hệ"
+                        value="Trung">
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="box box-warning">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Album ảnh</h3>
+                    </div>
+                    <div class="box-body">
+                                                <div class="form-group">
+                            <div class="file-loading">
+                                <input id="images" type="file" name="file[]" multiple class="file"
+                                    data-overwrite-initial="false" data-min-file-count="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group">
+                    <label for="name">Điện thoại</label>
+                    <input type="text" class="form-control" disabled placeholder="Điện thoại"
+                        value="0919161845">
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group">
+                    <label for="name">Giá cho thuê ( Đồng )</label>
+                    <input type="text" class="input-price" name="gia" class="form-control" placeholder=""
+                        value="0">
+                </div>
+            </div>
+            <div class="row-lists">
+                <div class="form-group">
+                    <label for="name">Diện tích ( m2 )</label>
+                    <input type="text" name="khuvuc" class="form-control" placeholder=""
+                        value="0">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success" style="margin-bottom: 20px;">Lưu dữ liệu</button>
+        </div>
+        <div class="room-right">
+            <div class="card mb-5" style="color: #856404; background-color: #fff3cd; border-color: #ffeeba;">
+                <div class="card-body">
+                    <h4 class="card-title">Lưu ý khi đăng tin</h4>
+                    <ul>
+                        <li style="list-style-type: square; margin-left: 15px;">Nội dung phải viết bằng tiếng Việt có
+                            dấu</li>
+                        <li style="list-style-type: square; margin-left: 15px;">Tiêu đề tin không dài quá 100 kí tự</li>
+                        <li style="list-style-type: square; margin-left: 15px;">Các bạn nên điền đầy đủ thông tin vào
+                            các mục để tin đăng có hiệu quả hơn.</li>
+                        <li style="list-style-type: square; margin-left: 15px;">Để tăng độ tin cậy và tin rao được nhiều
+                            người quan tâm hơn, hãy sửa vị trí tin rao của bạn trên bản đồ bằng cách kéo icon tới đúng
+                            vị trí của tin rao.</li>
+                        <li style="list-style-type: square; margin-left: 15px;">Tin đăng có hình ảnh rõ ràng sẽ được xem
+                            và gọi gấp nhiều lần so với tin rao không có ảnh. Hãy đăng ảnh để được giao dịch nhanh
+                            chóng!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</form>
+
+<script>
+var URL_LOAD_DISTRICT = 'http://127.0.0.1:8000/district'
+var URL_LOAD_WARD = 'http://127.0.0.1:8000/wards'
+</script>
+
+    </div>
+        <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-nav">
+            <div class="footer-col-first">
+                <a class="footer-logo" href="#">Thuê phòng trọ</a>
+                <p style="line-height: 1.3;">Đứng đầu các từ khóa liên quan đến
+                    <a href="" title="phòng trọ cho thuê"><strong>phòng trọ cho thuê</strong></a>,
+                    <a href="#" title="nhà cho thuê"><strong>nhà cho thuê</strong></a>,
+                    <a href="#" title="tìm người ở ghép"><strong>tìm người ở ghép</strong></a>
+                </p>
+                <p style="line-height: 1.3;"><strong>70.000+</strong> tin bài trên hệ thống, và tiếp tục tăng</p>
+                <p style="line-height: 1.3;"><strong>300.000+</strong> khách truy cập và <strong>hơn 2
+                        triệu</strong> lượt xem mỗi tháng</p>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Về CANTHOHOSTEL.COM</span>
+                <ul class="footer-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a rel="nofollow" href="#">Giới thiệu</a></li>
+                    <li><a rel="nofollow" href="#">Blog</a></li>
+                    <li><a rel="nofollow" href="#">Quy chế hoạt động</a></li>
+                    <li><a rel="nofollow" href="#">Quy định sử dụng</a></li>
+                    <li><a rel="nofollow" href="#">Chính sách bảo mật</a></li>
+                    <li><a rel="nofollow" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Hỗ trợ khách hàng</span>
+                <ul class="footer-menu">
+                    <li><a rel="nofollow" href="mailto: tuananh&thienbao_hostel@gmail.com">Câu hỏi thường gặp</a></li>
+                    <li><a rel="nofollow" href="#">Hướng dẫn đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Bảng giá dịch vụ</a></li>
+                    <li><a rel="nofollow" href="#">Quy định đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Giải quyết khiếu nại</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Liên hệ với chúng tôi</span>
+                <div class="social-links">
+                    <a class="social-fb" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-youtube" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-zalo" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-viber" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-twitter" rel="nofollow" target="_blank" href=""><i></i></a>
+                </div>
+                <br>
+                <span class="footer-col-title">Phương thức thanh toán</span>
+                <div class="box-payment">
+                    <ul>
+                        <li>
+                            <img src="./images/jcb.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/visa.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/master.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/in_banking.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/momo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/tien_mat.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-company">
+            <p class="fz-13">Email: tuananh&thienbao_hostel@gmail.com | admin.hostel@gmail.com</p>
+        </div>
+    </div>
+</footer>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="cantho_hostel" agent-id="72e6d912-87c5-40fa-827d-8465000251a6"
+    language-code="en" style="z-index: 9999; bottom: 66px !important;" class="chat_box" ></df-messenger>    <div class="bottom-bar" class="js-bottom-bar-user">
+    <a class="item home" href="http://127.0.0.1:8000">
+        <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+    </a>
+
+    <a rel="nofollow" class="item add-post" href="/user/room/create">
+        <div class="btn-add-post">
+            <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+        </div>
+    </a>
+
+    <a rel="nofollow" class="item login" href="/dang-nhap.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a>
+    <a rel="nofollow" class="item register" href="/dang-ky.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a>
+
+
+</div>
+
+
+
+
+        <div class="bottom-bar" class="js-bottom-bar-user">
+        <a class="item home" href="http://127.0.0.1:8000">
+            <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+        </a>
+
+        <a rel="nofollow" class="item add-post" href="/user/room/create">
+            <div class="btn-add-post">
+                <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+            </div>
+        </a>
+
+        <a rel="nofollow" class="item login" href="/user/cap-nhat.html"><i class="fa-solid fa-user"></i></i></i>Thông tin</a>
+        <a rel="nofollow" class="item register" href="http://127.0.0.1:8000/dang-xuat.html"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></i> Đăng xuất</a>
+    </div>
+                       
+    <div class="mobile-panel">
+    <div class="inner">
+        <div class="user-control">
+            <div class="user-info">
+                
+                                    <p>Chào mừng Trung đến với <strong>hostelcantho.com</strong></p>
+                            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="mn_link" href="http://127.0.0.1:8000">Trang chủ</a></li>
+                                    <li><a class="mn_link" href="http://127.0.0.1:8000/user/nap-tien">Nạp tiền</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/user/lich-su-nap-tien.html">Lịch sử nạp tiền</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/user/lich-su-thanh-toan.html">Lịch sử thanh toán</a></li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                                title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                                title="Nhà cho thuê">Nhà cho thuê </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                                title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                                title="Ở ghép">Ở ghép </a>
+                        </li>
+                                        <li><a class="mn_link" href="http://127.0.0.1:8000/bai-viet">Bài viết</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/bang-gia">Bảng giá</a></li>
+                                
+
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div class="panel-backdrop js-panel-backdrop"></div>    <script src="/js/user_room.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all"
+    rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js" type="text/javascript">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js"
+    type="text/javascript"></script>
+<script type="text/javascript">
+var inputField = document.querySelector('.input-price')
+inputField.oninput = function() {
+    var removeChar = this.value.replace(/[^0-9\.]/g, '') // This is to remove alphabets and special characters.
+    // console.log(removeChar);
+    var removeDot = removeChar.replace(/\./g, '') // This is to remove "DOT"
+    this.value = removeDot
+
+    var formatedNumber = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    // console.log(formatedNumber);
+    this.value = formatedNumber
+
+}
+</script>
+<script>
+ClassicEditor
+    .create(document.querySelector('#editor'))
+    .catch(error => {
+        console.error(error);
+    });
+</script>
+
+<script>
+$(function() {
+    $("#qhuyen_id").change(function() {
+        let $this = $(this);
+        let qhuyen_id = $this.val();
+        console.log('----', qhuyen_id);
+
+        $.ajax({
+                url: URL_LOAD_DISTRICT,
+                data: {
+                    qhuyen_id: qhuyen_id
+                },
+            })
+            .done(function(data) {
+                if (data) {
+                    let options = `<option value="0"> Chọn phường xã </option>`;
+                    data.map((item, index) => {
+                        options += `<option value="${item.id}"> ${item.ten}</option>`
+                    })
+                    $("#phuongxa_id").html(options);
+                }
+                console.log('---------- data: ', data);
+            });
+    })
+
+    $("#phuongxa_id").change(function() {
+        let $this = $(this);
+        let phuongxa_id = $this.val();
+        console.log('----', phuongxa_id);
+
+        $.ajax({
+                url: URL_LOAD_WARD,
+                data: {
+                    phuongxa_id: phuongxa_id
+                },
+            })
+            .done(function(data) {
+                if (data) {
+                    let options = `<option value="0"> Chọn phường xã </option>`;
+                    data.map((item, index) => {
+                        options += `<option value="${item.id}"> ${item.ten}</option>`
+                    })
+                    $("#huyen_id").html(options);
+                }
+                console.log('---------- data: ', data);
+            });
+    })
+
+})
+</script>
+
+    <script>
+        toastr.options.positionClass = 'toastr-bottom-right';
+    </script>
+</body>
+
+</html>

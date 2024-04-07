@@ -1,0 +1,323 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="yCIzN2W7dxTu7YDrRFO3yDEh9pOMQTNkHIblENad" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    
+
+    
+    <style>
+        .star.star-3 {
+            width: 42px;
+            height: 17px;
+        }
+
+        .star {
+            background: url(../images/mobile/star2.png) left center repeat-x;
+            background-size: 14px 14px;
+            display: inline-block;
+            margin-right: 3px;
+            float: left;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination li {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid #3861fb;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            margin: 0 10px;
+            color: #212121;
+        }
+
+        .pagination li.active {
+            background-color: #3861fb;
+            color: white;
+        }
+    </style>
+    <link href="./auth.css" rel="stylesheet">
+
+<script type="text/javascript" class="flasher-js">(function() {    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.3.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });    }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+</head>
+
+<body>
+    <!-- <div class="mb-icon-nav js-mobile-panel bars-display">  
+    <i class="fa fa-bars" aria-hidden="true"></i>
+
+</div> -->
+<div class="mobile_header">
+    <a class="top-logo" href="http://127.0.0.1:8000" title="">
+        <!-- logo test -->
+        <img src="./images/logo-phongtro.png" alt="">
+        <!-- logo testt -->
+    </a>
+    <div id="mobile_header_bars" class="mobile_header_bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+
+
+
+
+<nav class="navbar-menu">
+
+    <div class="navbar-menu-container">
+        <a class="top-logo" href="http://127.0.0.1:8000" title="">
+            <!-- logo test -->
+            <img src="./images/logo-phongtro.png" alt="">
+            <!-- logo testt -->
+        </a>
+        <ul id="menu-main-menu" class="container-menu level-1">
+            <li class="navbar_item "><a
+                    href="http://127.0.0.1:8000">Trang chủ</a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                    title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                    title="Nhà cho thuê">Nhà cho thuê </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                    title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                    title="Ở ghép">Ở ghép </a>
+            </li>
+            
+
+            <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/bai-viet" title="Bài viết">Bài viết</a>
+            </li>
+
+
+
+            <!-- <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/user/nap-tien" title="Nạp tiền">Nạp tiền</a>
+            </li> -->
+
+            <li class="navbar_item "><a
+                href="http://127.0.0.1:8000/bang-gia">Bảng giá</a>
+            </li>
+        </ul>
+
+
+        <div class="header-default container container-header">
+            <div class="header-area">
+                <div class="user-welcome js-reload-html-header">
+                                            <a rel="nofollow" class="btn btn-blue" href="http://127.0.0.1:8000/dang-nhap.html"><i style="margin-right:10px" class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
+                        <a rel="nofollow" class="btn btn-blue" href="http://127.0.0.1:8000/dang-ky.html"><i style="margin-right:10px" class="fa-solid fa-user-plus"></i>Đăng ký</a>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+</nav>        <div>
+            </div>
+    <div class="container">
+        <div style="" class="b-auth box_shadow">
+    <div class="auth-header">
+        <h1 class="title" style="text-align: center;">Đăng nhập</h1>
+    </div>
+    <div class="auth-content">
+        <form action="" method="POST" autocomplete="off">
+            <input type="hidden" name="_token" value="yCIzN2W7dxTu7YDrRFO3yDEh9pOMQTNkHIblENad">            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="" name="email" value="">
+                            </div>
+            <div class=" form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" class="form-control" placeholder="" name="password">
+                            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-blue btn-submit" style="background-color: var(--primary-color);">Đăng
+                    nhập</button>
+            </div>
+            <div class="form-group">
+                <a href="http://127.0.0.1:8000/user/thay-doi-mat-khau.html">Bạn quên mật khẩu?</a>
+                <a style="float: right;" href="http://127.0.0.1:8000/dang-ky.html">Tạo tài khoản mới</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+    </div>
+        <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-nav">
+            <div class="footer-col-first">
+                <a class="footer-logo" href="#">Thuê phòng trọ</a>
+                <p style="line-height: 1.3;">Đứng đầu các từ khóa liên quan đến
+                    <a href="" title="phòng trọ cho thuê"><strong>phòng trọ cho thuê</strong></a>,
+                    <a href="#" title="nhà cho thuê"><strong>nhà cho thuê</strong></a>,
+                    <a href="#" title="tìm người ở ghép"><strong>tìm người ở ghép</strong></a>
+                </p>
+                <p style="line-height: 1.3;"><strong>70.000+</strong> tin bài trên hệ thống, và tiếp tục tăng</p>
+                <p style="line-height: 1.3;"><strong>300.000+</strong> khách truy cập và <strong>hơn 2
+                        triệu</strong> lượt xem mỗi tháng</p>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Về CANTHOHOSTEL.COM</span>
+                <ul class="footer-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a rel="nofollow" href="#">Giới thiệu</a></li>
+                    <li><a rel="nofollow" href="#">Blog</a></li>
+                    <li><a rel="nofollow" href="#">Quy chế hoạt động</a></li>
+                    <li><a rel="nofollow" href="#">Quy định sử dụng</a></li>
+                    <li><a rel="nofollow" href="#">Chính sách bảo mật</a></li>
+                    <li><a rel="nofollow" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Hỗ trợ khách hàng</span>
+                <ul class="footer-menu">
+                    <li><a rel="nofollow" href="mailto: tuananh&thienbao_hostel@gmail.com">Câu hỏi thường gặp</a></li>
+                    <li><a rel="nofollow" href="#">Hướng dẫn đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Bảng giá dịch vụ</a></li>
+                    <li><a rel="nofollow" href="#">Quy định đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Giải quyết khiếu nại</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Liên hệ với chúng tôi</span>
+                <div class="social-links">
+                    <a class="social-fb" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-youtube" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-zalo" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-viber" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-twitter" rel="nofollow" target="_blank" href=""><i></i></a>
+                </div>
+                <br>
+                <span class="footer-col-title">Phương thức thanh toán</span>
+                <div class="box-payment">
+                    <ul>
+                        <li>
+                            <img src="./images/jcb.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/visa.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/master.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/in_banking.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/momo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/tien_mat.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-company">
+            <p class="fz-13">Email: tuananh&thienbao_hostel@gmail.com | admin.hostel@gmail.com</p>
+        </div>
+    </div>
+</footer>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="cantho_hostel" agent-id="72e6d912-87c5-40fa-827d-8465000251a6"
+    language-code="en" style="z-index: 9999; bottom: 66px !important;" class="chat_box" ></df-messenger>    <div class="bottom-bar" class="js-bottom-bar-user">
+    <a class="item home" href="http://127.0.0.1:8000">
+        <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+    </a>
+
+    <a rel="nofollow" class="item add-post" href="/user/room/create">
+        <div class="btn-add-post">
+            <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+        </div>
+    </a>
+
+    <a rel="nofollow" class="item login" href="/dang-nhap.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a>
+    <a rel="nofollow" class="item register" href="/dang-ky.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a>
+
+
+</div>
+
+
+
+
+                            <div class="bottom-bar" class="js-bottom-bar-user">
+                            <a class="item home" href="http://127.0.0.1:8000">
+                                <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+                            </a>
+
+                            <a rel="nofollow" class="item add-post" href="/user/room/create">
+                                <div class="btn-add-post">
+                                    <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+                                </div>
+                            </a>
+
+                            <a rel="nofollow" class="item login" href="/dang-nhap.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a>
+                            <a rel="nofollow" class="item register" href="/dang-ky.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a>
+                        </div>
+                                       
+    <div class="mobile-panel">
+    <div class="inner">
+        <div class="user-control">
+            <div class="user-info">
+                
+                 
+                    <p>Chào mừng bạn đến với <strong>hostelcantho.com</strong></p>
+                    <a rel="nofollow" class="btn btn-login" href="http://127.0.0.1:8000/dang-nhap.html">Đăng nhập</a>
+                    <a rel="nofollow" class="btn btn-register" href="http://127.0.0.1:8000/dang-ky.html">Đăng ký</a>
+                            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="mn_link" href="http://127.0.0.1:8000">Trang chủ</a></li>
+                 
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                                title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                                title="Nhà cho thuê">Nhà cho thuê </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                                title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                                title="Ở ghép">Ở ghép </a>
+                        </li>
+                                        <li><a class="mn_link" href="http://127.0.0.1:8000/bai-viet">Bài viết</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/bang-gia">Bảng giá</a></li>
+                                
+
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div class="panel-backdrop js-panel-backdrop"></div>    <script src="./auth.js"></script>
+
+    <script>
+        toastr.options.positionClass = 'toastr-bottom-right';
+    </script>
+</body>
+
+</html>

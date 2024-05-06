@@ -1,0 +1,728 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="4FSC7z4Jl6QALDk1Hi2hVcVn1dvVddej4VdN2H7c" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Chi tiết</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    
+
+    
+    <style>
+        .star.star-3 {
+            width: 42px;
+            height: 17px;
+        }
+
+        .star {
+            background: url(../images/mobile/star2.png) left center repeat-x;
+            background-size: 14px 14px;
+            display: inline-block;
+            margin-right: 3px;
+            float: left;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination li {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid #3861fb;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            margin: 0 10px;
+            color: #212121;
+        }
+
+        .pagination li.active {
+            background-color: #3861fb;
+            color: white;
+        }
+    </style>
+        
+    <link href="./chitiet.css" rel="stylesheet">
+
+<script type="text/javascript" class="flasher-js">(function() {    var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.3.1/dist/flasher.min.js';    var FLASHER_FLASH_BAG_PLACE_HOLDER = {};    var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER);    function mergeOptions(first, second) {        return {            context: merge(first.context || {}, second.context || {}),            envelopes: merge(first.envelopes || [], second.envelopes || []),            options: merge(first.options || {}, second.options || {}),            scripts: merge(first.scripts || [], second.scripts || []),            styles: merge(first.styles || [], second.styles || []),        };    }    function merge(first, second) {        if (Array.isArray(first) && Array.isArray(second)) {            return first.concat(second).filter(function(item, index, array) {                return array.indexOf(item) === index;            });        }        return Object.assign({}, first, second);    }    function renderOptions(options) {        if(!window.hasOwnProperty('flasher')) {            console.error('Flasher is not loaded');            return;        }        requestAnimationFrame(function () {            window.flasher.render(options);        });    }    function render(options) {        if ('loading' !== document.readyState) {            renderOptions(options);            return;        }        document.addEventListener('DOMContentLoaded', function() {            renderOptions(options);        });    }    if (1 === document.querySelectorAll('script.flasher-js').length) {        document.addEventListener('flasher:render', function (event) {            render(event.detail);        });    }    if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) {        render(options);    } else {        var tag = document.createElement('script');        tag.setAttribute('src', rootScript);        tag.setAttribute('type', 'text/javascript');        tag.onload = function () {            render(options);        };        document.head.appendChild(tag);    }})();</script>
+</head>
+
+<body>
+    <!-- <div class="mb-icon-nav js-mobile-panel bars-display">  
+    <i class="fa fa-bars" aria-hidden="true"></i>
+
+</div> -->
+<div class="mobile_header">
+    <a class="top-logo" href="http://127.0.0.1:8000" title="">
+        <!-- logo test -->
+        <img src="http://127.0.0.1:8000/../images/logo-phongtro.png" alt="">
+        <!-- logo testt -->
+    </a>
+    <div id="mobile_header_bars" class="mobile_header_bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+
+
+
+
+<nav class="navbar-menu">
+
+    <div class="navbar-menu-container">
+        <a class="top-logo" href="http://127.0.0.1:8000" title="">
+            <!-- logo test -->
+            <img src="./images/logo-phongtro.png" alt="">
+            <!-- logo testt -->
+        </a>
+        <ul id="menu-main-menu" class="container-menu level-1">
+            <li class="navbar_item "><a
+                    href="http://127.0.0.1:8000">Trang chủ</a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                    title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                    title="Nhà cho thuê">Nhà cho thuê </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                    title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                    title="Ở ghép">Ở ghép </a>
+            </li>
+                        <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/chuyen-muc-mat-bang-27"
+                    title="Mặt bằng">Mặt bằng </a>
+            </li>
+            
+
+            <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/bai-viet" title="Bài viết">Bài viết</a>
+            </li>
+
+
+
+            <!-- <li class="navbar_item ">
+                <a href="http://127.0.0.1:8000/user/nap-tien" title="Nạp tiền">Nạp tiền</a>
+            </li> -->
+
+            <li class="navbar_item "><a
+                href="http://127.0.0.1:8000/bang-gia">Bảng giá</a>
+            </li>
+        </ul>
+
+
+        <div class="header-default container container-header">
+            <div class="header-area">
+                <div class="user-welcome js-reload-html-header">
+                                        <div class="welcome-text">
+                                                <img src="./images/default-user.png"
+                            style="width: 40px;height: 40px;border-radius: 50%" alt="">
+                                                <div class="user-history">
+                            <div class="user-history-name">
+
+                                <span class="text-bold ">
+                                    Id: 18
+                                </span>-
+                                <span class="text-bold  ">Vũ Tuấn Anh</span>
+                                <span class="text-bold text-danger ">
+                                    104.650.471 đ
+                                </span>
+
+                            </div>
+                            <a href="http://127.0.0.1:8000/user/cap-nhat.html" class="text-bold  text-navigation">
+                                <!-- text-success -->
+                                Cập nhật tài khoản
+                            </a>
+                            <a href="http://127.0.0.1:8000/user/nap-tien" class="text-bold  text-navigation">
+                                
+                                Nạp tiền
+                            </a>
+                            <a href="http://127.0.0.1:8000/user/lich-su-nap-tien.html" class="text-bold  text-navigation">
+                                Lịch sử nạp tiền
+                                <!-- text-success -->
+                            </a>
+                            <a href="http://127.0.0.1:8000/user/lich-su-thanh-toan.html" class="text-bold  text-navigation">
+                                Lịch sử thanh toán
+                                <!-- text-danger -->
+                            </a>
+
+                            <a href="http://127.0.0.1:8000/user/room" class="text-bold text-navigation">Tin đăng</a>
+                            <a href="http://127.0.0.1:8000/dang-xuat.html" class="text-bold text-navigation">Đăng xuất</a>
+                        </div>
+                    </div>
+                    <a rel="nofollow" class="btn btn-pink btn-add-post" href="http://127.0.0.1:8000/user/room/create">
+                        Đăng tin mới
+                        <i class="la la-plus-circle" aria-hidden="true"></i>
+                    </a>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+</nav>        <div>
+            </div>
+    <div class="container">
+            <section class="post-category content-detail ">
+        <div class="content">
+            <div class="card b-slide">
+                <div class="card-body card-slide">
+                    <div class="prev-next">
+                        <div class="owl-style-buttons" id="js-owl-feature-job-button"></div>
+                    </div>
+                    <div class="slides">
+                        <div class="carousel-handle">
+                            <div class="carousel-handle__list-item" id="carousel-slide">
+                                <div class="owl-carousel owl-theme">
+                                                                            <div class="slide-item">
+                                            <img src="./images/Cantho_hostel-4.jpg" alt="" title=""
+                                                class="">
+                                        </div>
+                                                                            <div class="slide-item">
+                                            <img src="./images/Cantho_hostel-5.jpg" alt="" title=""
+                                                class="">
+                                        </div>
+                                                                            <div class="slide-item">
+                                            <img src="./images/Cantho_hostel-6.jpg" alt="" title=""
+                                                class="">
+                                        </div>
+                                                                            <div class="slide-item">
+                                            <img src="./images/Cantho_hostel-7.jpg" alt="" title=""
+                                                class="">
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="chothuenhanh-label"></span>
+                    <span class="post-hot"></span>
+                </div>
+            </div>
+            <div class="card b-base-info">
+                                <div style="padding:0" class="card-body breadcrumb">
+                    <ol>
+                                                    <li>
+                                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                                    title="Cho thuê phòng trọ"><span>Cho thuê phòng trọ</span></a>
+                            </li>
+                                                                            <li>
+                                <a href="http://127.0.0.1:8000/quan-huyen/ninh-kieu-110"
+                                    title="Ninh Kiều"><span>Ninh Kiều</span></a>
+                            </li>
+                                                <li><span>NHÀ TRỌ CAO CẤP 30M2, FULL NỘI THẤT, NẰM SAU LƯNG ĐẠI HỌC KỸ THUẬT - CÔNG NGHỆ CẦN THƠ, HẺM Ô TÔ ĐI THOẢI MÁI</span></li>
+                    </ol>
+                </div>
+                <div class="post-name">
+                    <span class="star-review">
+                                            </span>
+                    <h1>NHÀ TRỌ CAO CẤP 30M2, FULL NỘI THẤT, NẰM SAU LƯNG ĐẠI HỌC KỸ THUẬT - CÔNG NGHỆ CẦN THƠ, HẺM Ô TÔ ĐI THOẢI MÁI</h1>
+                </div>
+                                    <div class="post-cate">
+                        Chuyên mục: <a
+                            href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21">
+                            Cho thuê phòng trọ</a>
+                    </div>
+                                <div class="post-address">Địa chỉ: C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ</div>
+
+                <div class="post-price">
+                    <span class="price">
+                        <span class="mb-price">Giá cho thuê</span> <i></i> 1.000.000 đ
+                    </span>
+                    <span class="acreage">
+                        <span class="mb-price">Diện tích</span> <i></i>50m<sup>2</sup>
+                    </span>
+                    <span class="acreage mb-price">
+                        <span>Mã tin</span> 115
+                    </span>
+                    <span class="acreage mb-price">
+                        <span>Ngày cập nhật</span> 2024-04-17 00:20:03
+                    </span>
+                    <span class="acreage mb-price">
+                        <span>Ngày hết hạn</span> 2024-05-05
+                    </span>
+                </div>
+            </div>
+            <div class="card b-description">
+                <div class="card-header">
+                    <div class="cpn-heading">Thông tin mô tả</div>
+                </div>
+                <div class="card-body">
+                    <div class="content-description">
+                        <p><strong>Nội dung:</strong><br>NHÀ TRỌ SẠCH SẼ - LUÔN SẠCH SẼ, LUÔN GỌN GÀNG</p><p>Phòng có cửa sổ hành lang</p><p>Phòng mới như hình ảnh, gần&nbsp;Trường Đại học Kỹ thuật – Công nghệ Cần Thơ, cách trường 200m</p><p><strong>Tiện ích:</strong></p><p>- Gần chợ Trần Việt Châu, chợ An Hòa</p><p>- Gần các nhà thuốc: Long Châu, pharmacity</p><p>-&nbsp;Cổng vân tay, camera 24/24,</p><p>- Nhà xe rộng rãi</p><p>- Nhân viên trực tại chổ</p><p>- Nước uống free, khu phơi quần áo, máy giặt tính tiền giá rẻ,</p><p>- Sân thượng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card b-feature">
+                <div class="card-header">
+                    <div class="cpn-heading">Đặc điểm tin đăng</div>
+                </div>
+                <div class="card-body">
+                    <table class="table-detail">
+                        <tbody>
+                            <tr>
+                                <td class="name">Mã tin:</td>
+                                <td>#115</td>
+                            </tr>
+                                                            <tr>
+                                    <td class="name">Khu vực</td>
+                                    <td>
+                                                                                    <span>An Hoà - </span>
+                                                                                                                            <span>Ninh Kiều - </span>
+                                                                                <a href="http://127.0.0.1:8000/quan-huyen/ninh-kieu-110"
+                                            title="">Ninh Kiều</a>
+                                    </td>
+                                </tr>
+                                                                                        <tr>
+                                    <td class="name">Loại tin rao:</td>
+                                    <td><a
+                                            href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21">Cho thuê phòng trọ</a>
+                                    </td>
+                                </tr>
+                                                        <tr>
+                                <td class="name">Đối tượng thuê:</td>
+                                <td>Tất cả</td>
+                            </tr>
+                            <tr>
+                                <td class="name">Gói tin:</td>
+                                <td><span class="cl-red">0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card b-contact">
+                <div class="card-header">
+                    <div class="cpn-heading">Thông tin liên hệ</div>
+                </div>
+                <div class="card-body">
+                    <table class="table-detail">
+                        <tbody>
+                            <tr>
+                                <td class="name">Liên hệ:</td>
+                                <td>Vũ Tuấn Anh</td>
+                            </tr>
+                            <tr>
+                                <td class="name">Điện thoại:</td>
+                                <td>0949083414</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card b-map">
+                <div class="card-header">
+                    <div class="cpn-heading">Bản đồ</div>
+                </div>
+                <div class="card-body">
+                    <p class="map-address">Địa chỉ: C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6384937437037!2d105.76524067479426!3d10.046660190061154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0880f08006ffb%3A0x9a745510330faf4e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBL4bu5IHRodeG6rXQgLSBDw7RuZyBuZ2jhu4cgQ-G6p24gVGjGoQ!5e0!3m2!1svi!2s!4v1713280257641!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="map-description">
+                        Mọi thông tin trên website chỉ mang tính chất tham khảo. Nếu bạn có phản hồi
+                        với tin đăng này (báo xấu, tin đã cho thuê, không liên lạc được,...), vui lòng thông báo để
+                        phongtrocantho.vn có thể xử lý.
+                    </p>
+                    <a class="btn btn-report" target="_blank" rel="nofollow" href="/contact">
+                        <i class="fa fa-flag" aria-hidden="true"></i> Gửi phản hồi
+                    </a>
+                </div>
+            </div>
+            <div class="card b-related">
+                <div class="card-header">
+                    <div class="cpn-heading">Có thể bạn quan tâm</div>
+                </div>
+                <div class="card-body">
+                    <div class="post-list">
+                                                    <div class="post-item bd-red">
+    <div class="post-item__image">
+        <a href="http://127.0.0.1:8000/room/nha-tro-cao-cap-30m2-full-noi-that-nam-sau-lung-dai-hoc-ky-thuat-cong-nghe-can-tho-hem-o-to-di-thoai-mai-115" class="a-img">
+            <img src="./images/Cantho_hostel-4.jpg" alt="NHÀ TRỌ CAO CẤP 30M2, FULL NỘI THẤT, NẰM SAU LƯNG ĐẠI HỌC KỸ THUẬT - CÔNG NGHỆ CẦN THƠ, HẺM Ô TÔ ĐI THOẢI MÁI">
+            
+
+        </a>
+    </div>
+    <div class="post-item__info">
+        <div class="post-title">
+                            <a href="http://127.0.0.1:8000/room/nha-tro-cao-cap-30m2-full-noi-that-nam-sau-lung-dai-hoc-ky-thuat-cong-nghe-can-tho-hem-o-to-di-thoai-mai-115"
+                    title="NHÀ TRỌ CAO CẤP 30M2, FULL NỘI THẤT, NẰM SAU LƯNG ĐẠI HỌC KỸ THUẬT - CÔNG NGHỆ CẦN THƠ, HẺM Ô TÔ ĐI THOẢI MÁI">NHÀ TRỌ CAO CẤP 30M2, FULL NỘI THẤT, NẰM SAU LƯNG ĐẠI HỌC KỸ THUẬT - CÔNG NGHỆ CẦN THƠ, HẺM Ô TÔ ĐI THOẢI MÁI</a>
+        </div>
+        <div class="meta-salry-time">
+            <div class="post-price">1.000.000 đ
+            </div>
+
+            <div class="post-time fz-13">Cập nhật: 2024-04-17 00:20:03</div>
+        </div>
+        <div class="meta-acreage-location">
+            <span class="post-acreage fz-13">50m²</span>
+            <span class="post-location">
+                <a href="#" title="C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ">C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ</a>
+            </span>
+        </div>
+        
+        <div class="post-summary">
+            <p><strong>Nội dung:</strong><br>NHÀ TRỌ SẠCH SẼ - LUÔN SẠCH SẼ, LUÔN GỌN GÀNG</p><p>Phòng có cửa sổ hành lang</p><p>Phòng mới như hình ảnh, gần&nbsp;Trường Đại học Kỹ thuật – Công nghệ Cần Thơ, cách trường 200m</p><p><strong>Tiện ích:</strong></p><p>- Gần chợ Trần Việt Châu, chợ An Hòa</p><p>- Gần các nhà thuốc: Long Châu, pharmacity</p><p>-&nbsp;Cổng vân tay, camera 24/24,</p><p>- Nhà xe rộng rãi</p><p>- Nhân viên trực tại chổ</p><p>- Nước uống free, khu phơi quần áo, máy giặt tính tiền giá rẻ,</p><p>- Sân thượng</p>
+        </div>
+    </div>
+</div>                                                    <div class="post-item bd-red">
+    <div class="post-item__image">
+        <a href="http://127.0.0.1:8000/room/nha-tro-cao-cap-30m2-full-noi-that-nam-sau-lung-dai-hoc-ky-thuat-cong-nghe-can-tho-hem-oto-thoai-mai-107" class="a-img">
+            <img src="./images/Cantho_hostel-5.jpg" alt="Nhà Trọ Cao Cấp 30m2, Full Nội Thất, nằm sau lưng Đại Học Kỹ thuật - Công nghệ Cần Thơ, hẻm OTO thoải mái">
+            
+
+        </a>
+    </div>
+    <div class="post-item__info">
+        <div class="post-title">
+                                        <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                                <a href="http://127.0.0.1:8000/room/nha-tro-cao-cap-30m2-full-noi-that-nam-sau-lung-dai-hoc-ky-thuat-cong-nghe-can-tho-hem-oto-thoai-mai-107"
+                    title="Nhà Trọ Cao Cấp 30m2, Full Nội Thất, nằm sau lưng Đại Học Kỹ thuật - Công nghệ Cần Thơ, hẻm OTO thoải mái">Nhà Trọ Cao Cấp 30m2, Full Nội Thất, nằm sau lưng Đại Học Kỹ thuật - Công nghệ Cần Thơ, hẻm OTO thoải mái</a>
+        </div>
+        <div class="meta-salry-time">
+            <div class="post-price">1.000.000 đ
+            </div>
+
+            <div class="post-time fz-13">Cập nhật: 2024-04-04 00:09:15</div>
+        </div>
+        <div class="meta-acreage-location">
+            <span class="post-acreage fz-13">40m²</span>
+            <span class="post-location">
+                <a href="#" title="C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ">C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ</a>
+            </span>
+        </div>
+        
+        <div class="post-summary">
+            CHO THUÊ PHÒNG TRỌ CAO CẤP, 1 TRỆT 1 LỬNG CỰC ĐẸP, AN KHÁNH, NINH KIỀU-NHÀ FULL NỘI THẤT
+
+GIÁ: 4,2 triệu/căn
+
+- Mỗi căn đều 1 Trệt 1 Lửng 30m2 rất rộng rãi, 1 cửa chính, 2 cửa sổ, Màn cửa, 1 Tủ Bếp, 1 WC, Nhà dán gạch cao 2m, trần thạch cao rất sạch sẽ..
+
+- có lối đi chung 3m, xe tải nhỏ vào tới phòng..
+
+Nhà Full Nội Thất: MÁY LẠNH, MÁY GIẶT, TỦ LẠNH, SOFA, NỆM, TỦ, MÁY NÓNG LẠNH, KỆ..
+
+Cổng rào vân tay, ra vào tự do..
+
+Có nhà để xe riêng
+
+- Vị trí: C1T82, hẻm 40, đường Võ Trường Toản, phường An Hòa, quận Ninh Kiều, Cần Thơ sau Đại Học Kỹ thuật - Công nghệ Cần Thơ
+
+Nhà nằm trục Chính Hẻm 6m
+
+- Cọc 1 tháng, Đóng tiền đầu tháng
+
+- Hợp đồng trên 6 tháng
+        </div>
+    </div>
+</div>                                                    <div class="post-item bd-red">
+    <div class="post-item__image">
+        <a href="http://127.0.0.1:8000/room/nha-tro-gia-re-thien-an-day-du-tien-nghi-98" class="a-img">
+            <img src="./uploads/2024/02/25/2024-02-25__hostel-10.jpg" alt="Nhà trọ giá rẻ Thiên Ân đầy đủ tiện nghi">
+            
+
+        </a>
+    </div>
+    <div class="post-item__info">
+        <div class="post-title">
+                                        <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                                <a href="http://127.0.0.1:8000/room/nha-tro-gia-re-thien-an-day-du-tien-nghi-98"
+                    title="Nhà trọ giá rẻ Thiên Ân đầy đủ tiện nghi">Nhà trọ giá rẻ Thiên Ân đầy đủ tiện nghi</a>
+        </div>
+        <div class="meta-salry-time">
+            <div class="post-price">2.500.000 đ
+            </div>
+
+            <div class="post-time fz-13">Cập nhật: 2024-04-04 00:20:09</div>
+        </div>
+        <div class="meta-acreage-location">
+            <span class="post-acreage fz-13">30m²</span>
+            <span class="post-location">
+                <a href="#" title="223, Ninh Kiều, Hưng Lợi, Cần Thơ">223, Ninh Kiều, Hưng Lợi, Cần Thơ</a>
+            </span>
+        </div>
+        
+        <div class="post-summary">
+            <p>Nhà trọ giá rẻ đầy đủ tiện nghi</p><p>Ra vào vân tay</p><p>Không chung chủ</p><p>Điện 4000kw</p><p>Xe free,&nbsp;Wifi free</p><p>Nước nóng lạnh 100K/phòng/tháng</p>
+        </div>
+    </div>
+</div>                                                    <div class="post-item bd-red">
+    <div class="post-item__image">
+        <a href="http://127.0.0.1:8000/room/phong-tro-moi-xay-gio-tu-do-ham-xe-thang-may-95" class="a-img">
+            <img src="./uploads/2024/02/25/2024-02-25__hostel-1.jpg" alt="Phòng trọ mới xây, giờ tự do, hầm xe, thang máy">
+            
+
+        </a>
+    </div>
+    <div class="post-item__info">
+        <div class="post-title">
+                            <a href="http://127.0.0.1:8000/room/phong-tro-moi-xay-gio-tu-do-ham-xe-thang-may-95"
+                    title="Phòng trọ mới xây, giờ tự do, hầm xe, thang máy">Phòng trọ mới xây, giờ tự do, hầm xe, thang máy</a>
+        </div>
+        <div class="meta-salry-time">
+            <div class="post-price">3.000.000 đ
+            </div>
+
+            <div class="post-time fz-13">Cập nhật: 2024-03-29 20:29:03</div>
+        </div>
+        <div class="meta-acreage-location">
+            <span class="post-acreage fz-13">32m²</span>
+            <span class="post-location">
+                <a href="#" title="C1T82, phường An Bình, Ninh Kiều, Cần Thơ">C1T82, phường An Bình, Ninh Kiều, Cần Thơ</a>
+            </span>
+        </div>
+        
+        <div class="post-summary">
+            <p>ApasHome cho thuê phòng trọ, tòa nhà thang máy, giờ giấc tự do</p><p>Vị trí:</p><p>Chi nhánh 1: 325/12 Đường Lê Văn Quới, Phường Bình Trị Đông, quận Bình Tân( ĐƯỜNG HẺM XE TẢI )</p><p>Chi nhánh 2: 431a Đường Lê Văn Quới, Phường Bình Trị Đông A, Quận Bình Tân</p><p>Sát chợ Lê Văn Quới, 1km đến ngã tư bốn xã, 2km đến Khu công nghiệp Dimsum, KDL Đầm Sen, 20 phút di chuyển về Quận 10, 11, 5 và các tiện ích xung quanh đầy đủ&nbsp;</p><p>Giá phòng:</p><p>- 2.600.000đ/tháng. (tiện nghi:máy lạnh, gác, kệ bếp, toilet).</p><p>- 3.100.000/tháng. (tiện nghi:máy lạnh tủ âm tường, kệ bếp, toilet).</p><p>- 3.500.000/tháng ( tiện nghi:gác, máy lạnh tủ âm tường, kệ bếp, toilet).</p><p>- Đặt cọc phòng 1 tháng.</p><p>+ Dịch vụ:</p><p>- Điện: 3.8k/KWH.</p><p>- Nước máy: 25k/m3.</p><p>- Wifi, rác, vệ sinh, thang máy: 150k / phòng/ tháng.</p><p>- Xe máy: 100k/ xe / tháng.</p><p>- Liên hệ: Mr.Tuấn( call, zalo)</p>
+        </div>
+    </div>
+</div>                                            </div>
+                </div>
+            </div>
+            <div class="post-bottom-bar">
+                <a class="item call" rel="nofollow" href="tel:094227458"><i class="fa fa-phone" aria-hidden="true"></i>
+                    0949083414</a>
+                <a class="item zalo" rel="nofollow" href="https://zalo.me/094227458">Zalo</a>
+                <a class="item sms" rel="nofollow" href="sms:094227458">Nhắn tin</a>
+            </div>
+        </div>
+        <div class="sidebar sidebar-right">
+            <div class="card b-author">
+                <div class="card-body author">
+                    <div class="author-aside">
+                        <div class="author-anhdaidien">
+                            <img src="./images/default-user.png">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Vũ Tuấn Anh</span>
+                            <a class="btn btn-phone" rel="nofollow" href="tel:0949083414">
+                                <i class="fa fa-phone" aria-hidden="true"></i> 0949083414
+                            </a>
+                            <a class="btn btn-zalo" target="_blank" rel="nofollow"
+                                href="https://zalo.me/0949083414">
+                                Nhắn Zalo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card b-list-cate">
+    <div class="card-header">
+        <div class="cpn-heading">Danh mục</div>
+    </div>
+    <div class="card-body list-cate">
+        <ul>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21" title="Cho thuê phòng trọ">Cho thuê phòng trọ
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22" title="Nhà cho thuê">Nhà cho thuê
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23" title="Cho thuê mặt bằng">Cho thuê mặt bằng
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24" title="Ở ghép">Ở ghép
+                </a>
+
+            </li>
+                        <li>
+                <a href="http://127.0.0.1:8000/chuyen-muc-mat-bang-27" title="Mặt bằng">Mặt bằng
+                </a>
+
+            </li>
+                    </ul>
+    </div>
+</div>        </div>
+    </section>
+
+        </div>
+        <footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-nav">
+            <div class="footer-col-first">
+                <a class="footer-logo" href="#">Thuê phòng trọ</a>
+                <p style="line-height: 1.3;">Đứng đầu các từ khóa liên quan đến
+                    <a href="" title="phòng trọ cho thuê"><strong>phòng trọ cho thuê</strong></a>,
+                    <a href="#" title="nhà cho thuê"><strong>nhà cho thuê</strong></a>,
+                    <a href="#" title="tìm người ở ghép"><strong>tìm người ở ghép</strong></a>
+                </p>
+                <p style="line-height: 1.3;"><strong>70.000+</strong> tin bài trên hệ thống, và tiếp tục tăng</p>
+                <p style="line-height: 1.3;"><strong>300.000+</strong> khách truy cập và <strong>hơn 2
+                        triệu</strong> lượt xem mỗi tháng</p>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Về CANTHOHOSTEL.COM</span>
+                <ul class="footer-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a rel="nofollow" href="#">Giới thiệu</a></li>
+                    <li><a rel="nofollow" href="#">Blog</a></li>
+                    <li><a rel="nofollow" href="#">Quy chế hoạt động</a></li>
+                    <li><a rel="nofollow" href="#">Quy định sử dụng</a></li>
+                    <li><a rel="nofollow" href="#">Chính sách bảo mật</a></li>
+                    <li><a rel="nofollow" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Hỗ trợ khách hàng</span>
+                <ul class="footer-menu">
+                    <li><a rel="nofollow" href="mailto: tuananh&thienbao_hostel@gmail.com">Câu hỏi thường gặp</a></li>
+                    <li><a rel="nofollow" href="#">Hướng dẫn đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Bảng giá dịch vụ</a></li>
+                    <li><a rel="nofollow" href="#">Quy định đăng tin</a></li>
+                    <li><a rel="nofollow" href="#">Giải quyết khiếu nại</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-col-title">Liên hệ với chúng tôi</span>
+                <div class="social-links">
+                    <a class="social-fb" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-youtube" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-zalo" rel="nofollow" target="_blank" href=""><i></i></a>
+                    <a class="social-viber" rel="nofollow" target="_blank" href="#"><i></i></a>
+                    <a class="social-twitter" rel="nofollow" target="_blank" href=""><i></i></a>
+                </div>
+                <br>
+                <span class="footer-col-title">Phương thức thanh toán</span>
+                <div class="box-payment">
+                    <ul>
+                        <li>
+                            <img src="./images/jcb.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/visa.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/master.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/in_banking.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/momo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/tien_mat.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-company">
+            <p class="fz-13">Email: tuananh&thienbao_hostel@gmail.com | admin.hostel@gmail.com</p>
+        </div>
+    </div>
+</footer>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <div class="bottom-bar" class="js-bottom-bar-user">
+    <a class="item home" href="http://127.0.0.1:8000">
+        <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+    </a>
+
+    <a rel="nofollow" class="item add-post" href="/user/room/create">
+        <div class="btn-add-post">
+            <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+        </div>
+    </a>
+
+    <a rel="nofollow" class="item login" href="/dang-nhap.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a>
+    <a rel="nofollow" class="item register" href="/dang-ky.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a>
+
+
+</div>
+
+
+
+
+        <div class="bottom-bar" class="js-bottom-bar-user">
+        <a class="item home" href="http://127.0.0.1:8000">
+            <i class="fa fa-home" aria-hidden="true"></i> Trang chủ
+        </a>
+
+        <a rel="nofollow" class="item add-post" href="/user/room/create">
+            <div class="btn-add-post">
+                <div class="inner"><i class="fa fa-plus-circle" aria-hidden="true"></i>Đăng tin</div>
+            </div>
+        </a>
+
+        <a rel="nofollow" class="item login" href="/user/cap-nhat.html"><i class="fa-solid fa-user"></i></i></i>Thông tin</a>
+        <a rel="nofollow" class="item register" href="http://127.0.0.1:8000/dang-xuat.html"><i class="fa-solid fa-right-from-bracket" aria-hidden="true"></i></i> Đăng xuất</a>
+    </div>
+                       
+    <div class="mobile-panel">
+    <div class="inner">
+        <div class="user-control">
+            <div class="user-info">
+                
+                                    <p>Chào mừng Vũ Tuấn Anh đến với <strong>hostelcantho.com</strong></p>
+                            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="mn_link" href="http://127.0.0.1:8000">Trang chủ</a></li>
+                                    <li><a class="mn_link" href="http://127.0.0.1:8000/user/nap-tien">Nạp tiền</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/user/lich-su-nap-tien.html">Lịch sử nạp tiền</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/user/lich-su-thanh-toan.html">Lịch sử thanh toán</a></li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-phong-tro-21"
+                                title="Cho thuê phòng trọ">Cho thuê phòng trọ </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-nha-cho-thue-22"
+                                title="Nhà cho thuê">Nhà cho thuê </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-cho-thue-mat-bang-23"
+                                title="Cho thuê mặt bằng">Cho thuê mặt bằng </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-o-ghep-24"
+                                title="Ở ghép">Ở ghép </a>
+                        </li>
+                                            <li class="navbar_item ">
+                            <a href="http://127.0.0.1:8000/chuyen-muc-mat-bang-27"
+                                title="Mặt bằng">Mặt bằng </a>
+                        </li>
+                                        <li><a class="mn_link" href="http://127.0.0.1:8000/bai-viet">Bài viết</a></li>
+                    <li><a class="mn_link" href="http://127.0.0.1:8000/bang-gia">Bảng giá</a></li>
+                                
+
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div class="panel-backdrop js-panel-backdrop"></div>        
+    <script src="./chitiet.js"></script>
+
+    <script>
+        toastr.options.positionClass = 'toastr-bottom-right';
+    </script>
+</body>
+
+</html>
